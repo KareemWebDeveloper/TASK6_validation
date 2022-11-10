@@ -155,6 +155,8 @@ let validation_pattern = {
         else if(confirmpw.value!=passs.value){
             confirmpw.nextElementSibling.textContent = `${confirmpw.name} must be matching  `;
             passs.nextElementSibling.textContent = `${confirmpw.name} must be matching  `;
+            confirmpw.classList.add('error');
+            passs.classList.add('error');
             error = true;
         }
        else {
@@ -164,42 +166,3 @@ let validation_pattern = {
     }
     return error
   }
-
-
-
-
-
-
-
-
-//   function validation(inputs, validationPattern) {
-//     var error = false; 
-//     for (var i = 0; i < inputs.length; i++) {
-//       var element = inputs[i];
-//       if (element.value == "" ) {
-//         element.nextElementSibling.textContent = `${element.name} is required`;
-//         error = true;
-//         element.classList.add('error');
-//        } 
-//        else if (!validationPattern[element.name].test(element.value)) { 
-//         element.nextElementSibling.textContent = `enter a valid ${element.name}`;
-//         error = true;
-//         element.classList.add('error');
-//       }
-//     //    else if (element.name=='confrimPassword') { 
-//     //     if(element.value != inputs[i-1].value){
-//     //     element.nextElementSibling.textContent = `not matching ${element.name}`;
-//     //     error = true;
-//     //     element.classList.add('error');
-//     //     }
-//     //   }
-//        else {
-//         element.nextElementSibling.textContent = "";
-//         element.classList.add('error');
-//       }
-//     }
-//     return error
-//   }
-
-
-
