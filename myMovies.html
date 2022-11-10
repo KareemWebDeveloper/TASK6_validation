@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <title>Movies</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="images/movie-png-hd-movie-logo-cliparts-2524910-1118.png" alt="">
+    </div>
+    <div class="choices">
+        <div id="listTitle" class="title">
+            <h2>choose your favorite movie category</h2>
+            <i id="arroww" class="fa-solid fa-arrow-down "></i>
+        </div>
+        <div id="categoriess" class="categories none">
+            <ul class="list">
+                <li id="c" kiko="categ">Comedy</li>
+                <li id="h" kiko="categ">Horror</li>
+                <li id="r" kiko="categ">Romantic</li>
+                <li id="a" kiko="categ">Action</li>
+                <li id="d" kiko="categ">Drama</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" id="photos">
+    <div id="horrorMovie" class="animatedHorror none">
+        <h3>PERFECT HORROR MOVIE <br>SUGGESTION</h3>
+        <img src="images/horror1.jpg" alt="">
+        <span class="none"></span>
+    </div>
+    <div id="comedyMovie" class="animatedHorror none">
+        <h3>PERFECT COMEDY MOVIE <br>SUGGESTION</h3>
+        <img src="images/comedy1.png" alt="">
+        <span class="none"></span>
+    </div>
+    <div id="dramaMovie" class="animatedHorror none">
+        <h3>PERFECT DRAMA MOVIE <br>SUGGESTION</h3>
+        <img src="images/drama1.jpg" alt="">
+        <span class="none"></span>
+    </div>
+    <div id="romanticMovie" class="animatedHorror none">
+        <h3>PERFECT ROMANTIC MOVIE <br>SUGGESTION</h3>
+        <img src="images/romantic1.jpg" alt="">
+        <span class="none"></span>
+    </div>
+    <div id="actionMovie" class="animatedHorror none">
+        <h3>PERFECT ACTION MOVIE <br>SUGGESTION</h3>
+        <img src="images/action1.jpg" alt="">
+        <span class="none"></span>
+    </div>
+</div>
+
+<form>
+    <h2>REGISTERATION</h2>
+    <label for="Fname">First Name</label>
+    <input
+      type="text"
+      name="firstName"
+      class="form-control"
+      id="Fname"
+      aria-describedby="emailHelp"
+      placeholder="Enter your first name"
+    />
+    <span id="fnamee"></span>
+    <label for="Lname">Last Name</label>
+    <input
+      type="text"
+      name="lastName"
+      class="form-control"
+      id="Lname"
+      aria-describedby="emailHelp"
+      placeholder="Enter your last name"
+    />
+    <span id="Lnamee"></span>
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      name="email"
+      class="form-control"
+      id="email"
+      aria-describedby="emailHelp"
+      placeholder="Enter your email address"
+    />
+    <span id="pw"></span>
+    <label for="pass">Password</label>
+    <input
+      type="password"
+      name="password"
+      class="form-control"
+      id="pass"
+      aria-describedby="emailHelp"
+      placeholder="Enter your password"
+    />
+    <span id="pw"></span>
+    <label for="confirm">Confirm Password</label>
+    <input
+      type="password"
+      name="password"
+      kimo="ConfirmPassword"
+      class="form-control"
+      id="confirm"
+      aria-describedby="emailHelp"
+      placeholder="confirm your password"
+    />
+    <span id="pass"></span>
+    <!-- <label for="confirm">Confirm Password</label>
+    <input
+      type="password"
+      name="password"
+      class="form-control"
+      id="confirm"
+      aria-describedby="emailHelp"
+      placeholder="Confrim your password again"
+    />
+    <span id="pass2"></span> -->
+    <button type="submit" id="submit" class="submit">Register</button>
+</form>
+
+<script src="movie.js"></script>
+</body>
+</html>

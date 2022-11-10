@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family:  'Poor Story', cursive;
+     */
+     /* font-family: 'Lobster', cursive; */
+     font-family: 'Kalam', cursive;
+}
+body{
+    background: url(images/wall.png) fixed;
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vh;
+    margin-top: 3vh;
+}
+.logo img{
+    width: 13%;
+    transition-duration: 0.2s;
+}
+.logo img:hover{
+    width: 15%;
+    transform: rotate(25deg);
+}
+.choices{
+    margin-top: 10vh ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+}
+.title{
+    background-color: rgba(29, 27, 27, 0.695);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.title h2{
+    text-shadow: 0px 1px 5px black ;
+    letter-spacing: 2px;
+}
+.title:hover{
+    padding: 25px;
+    background-color: rgba(29, 27, 27, 0.771);
+
+}
+.title i {
+    margin-left: 10px;
+    font-size: 18px;
+    text-shadow: 0px 1px 5px black ;
+    transition-duration: 0.2s;
+}
+.rot{
+    transform: rotate(180deg);
+}
+.title i:hover{
+    font-size: 26px;
+}
+
+/* ul{
+    display: none;
+} */
+ul li{
+    /* width: 100%; */
+    list-style: none;
+    font-size: 20px;
+    margin: 2vh;
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.categories{
+    text-align: center;
+    padding: 5px;
+    /* border-radius: 4px; */
+    background-color: rgba(29, 27, 27, 0.868);
+    transition-duration: 0.2s;
+}
+.none{
+    display: none !important;
+    transition-duration: 0.2s;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul li:hover{
+    font-size: 23px;
+    /* background-color: rgba(29, 27, 27, 0.959); */
+    background-color: rgba(100, 0, 60, 0.852);
+    padding: 10px;
+    border-radius: 4px;       
+}
+.active{
+    background-color: rgba(29, 27, 27, 0.937);
+    padding: 10px;
+    border-radius: 4px;  
+}
+.animatedHorror{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.animatedHorror img{
+    width: 200px;
+    box-shadow: 0px 1px 16px black; 
+    cursor: pointer;
+    transition-duration: 0.3s;
+    animation: frame 1.5s ;
+}
+@keyframes frame {
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.fade{
+    transition-duration: 0.3s;
+    animation: outt 1.5s ;
+}
+@keyframes outt {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+.animatedHorror h3{
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 0px 1px 5px rgb(0, 0, 0) ;
+    animation: frame 1.5s ;
+}
+.animatedHorror img:hover{
+    width: 210px;
+    box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+
+form{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-shadow: 0px 1px 5px black;
+}
+form h2{
+    margin-bottom: 3vh;
+}
+.form-control{
+    padding: 10px;
+    margin: 13px;
+    width: 30%;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.242);
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    text-shadow: 0px 1px 3px black;
+    
+}
+span{
+    color: red;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.submit{
+    padding: 12px;
+    margin: 16px;
+    width: 18%;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-bottom: 2px solid white;
+    transition-duration: 0.2s;
+}
+.submit:hover{
+    background-color: rgba(255, 255, 255, 0.732);
+
+}
+.error{
+    background-color: rgba(255, 0, 0, 0.281) !important;
+}
